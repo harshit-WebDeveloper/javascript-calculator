@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Javscript Calculator</h2>
+      <button onclick="calc('7');">7</button>
+      <button onclick="calc('8');">8</button>
+      <button onclick="calc('9');">9</button>
+      <button class="btnClr" onclick="calc('+');">+</button>
+      <br />
+      <button onclick="calc('4');">4</button>
+      <button onclick="calc('5');">5</button>
+      <button onclick="calc('6');">6</button>
+      <button class="btnClr" onclick="calc('-');">-</button>
+      <br />
+      <button onclick="calc('1');">1</button>
+      <button onclick="calc('2');">2</button>
+      <button onclick="calc('3');">3</button>
+      <button class="btnClr" onclick="calc('*');">*</button>
+      <br />
+      <button onclick="calc('0');">0</button>
+      <button onclick="calc('.');">.</button>
+      <button class="green" onclick="calc('=');">=</button>
+      <button class="btnClr" onclick="calc('/');">/</button>
+    </div>
+    <script>
+      let calculation = "";
+      function calc(value) {
+        if (value === "=") {
+          calculation = eval(calculation);
+          console.log(calculation);
+        } else {
+          calculation += value;
+          console.log(calculation);
+        }
+      }
+    </script>
+  </body>
+</html>

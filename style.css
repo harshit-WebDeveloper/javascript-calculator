@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding-top: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  background-color: pink;
+}
+button {
+  padding: 15px 25px;
+  margin: 8px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #343434;
+}
+.btnClr {
+  color: #66ff7f;
+}
+.green {
+  background-color: #66ff7f;
+}
