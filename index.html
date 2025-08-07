@@ -9,6 +9,7 @@
   <body>
     <div class="container">
       <h2>Javscript Calculator</h2>
+      <p></p>
       <button onclick="calc('7');">7</button>
       <button onclick="calc('8');">8</button>
       <button onclick="calc('9');">9</button>
@@ -28,18 +29,25 @@
       <button onclick="calc('.');">.</button>
       <button class="green" onclick="calc('=');">=</button>
       <button class="btnClr" onclick="calc('/');">/</button>
+      <br />
+      <button class="red" onclick="reset();">Clear</button>
     </div>
     <script>
       let calculation = "";
       function calc(value) {
         if (value === "=") {
           calculation = eval(calculation);
-          console.log(calculation);
+          document.querySelector("p").innerText = calculation;
         } else {
           calculation += value;
-          console.log(calculation);
+          document.querySelector("p").innerText = calculation;
         }
       }
+      function reset() {
+        calculation = "";
+        document.querySelector("p").innerText = calculation;
+      }
+      document.querySelector("p").innerText = calculation;
     </script>
   </body>
 </html>
