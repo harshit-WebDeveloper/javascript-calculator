@@ -32,22 +32,6 @@
       <br />
       <button class="red" onclick="reset();">Clear</button>
     </div>
-    <script>
-      let calculation = "";
-      function calc(value) {
-        if (value === "=") {
-          calculation = eval(calculation);
-          document.querySelector("p").innerText = calculation;
-        } else {
-          calculation += value;
-          document.querySelector("p").innerText = calculation;
-        }
-      }
-      function reset() {
-        calculation = "";
-        document.querySelector("p").innerText = calculation;
-      }
-      document.querySelector("p").innerText = calculation;
-    </script>
+    <script src="logic.js"></script>
   </body>
 </html>
